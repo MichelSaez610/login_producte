@@ -14,7 +14,7 @@
         android:src="@drawable/azul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,VisualLintBounds"
         tools:layout_editor_absoluteY="-290dp" />
 
     <androidx.cardview.widget.CardView
@@ -48,10 +48,10 @@
         android:layout_width="179dp"
         android:layout_height="78dp"
         android:layout_marginTop="16dp"
-        android:text="Create New Account"
+        android:text="@string/create_new_account"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,9 +62,9 @@
         android:layout_width="60dp"
         android:layout_height="65dp"
         android:layout_marginTop="16dp"
-        android:text="+"
+        android:text="@string/plus"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/outline_box_edittext"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/username"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +92,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/outline_box_edittext"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="@string/e_mail"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -107,7 +107,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/outline_box_edittext"
         android:ems="10"
-        android:hint="Phone Number"
+        android:hint="@string/phone_number"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -122,7 +122,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/outline_box_edittext"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -135,7 +135,7 @@
         android:layout_width="150dp"
         android:layout_height="62dp"
         android:layout_marginTop="20dp"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/black"
         app:backgroundTint="@android:color/transparent"
         app:cornerRadius="50dp"
@@ -150,32 +150,36 @@
         android:id="@+id/name_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Full Name"
+        android:text="@string/full_name"
         app:layout_constraintBottom_toTopOf="@+id/name_input"
-        tools:layout_editor_absoluteX="56dp" />
+        tools:layout_editor_absoluteX="56dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/mail_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="E-Mail"
+        android:text="@string/e_mail_label"
         app:layout_constraintBottom_toTopOf="@+id/mail_input"
-        tools:layout_editor_absoluteX="56dp" />
+        tools:layout_editor_absoluteX="56dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/phone_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone Number"
+        android:text="@string/phone_number_label"
         app:layout_constraintBottom_toTopOf="@+id/phone_input"
-        tools:layout_editor_absoluteX="55dp" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/password_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="@string/password_label"
         app:layout_constraintBottom_toTopOf="@+id/password_input"
-        tools:layout_editor_absoluteX="57dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
