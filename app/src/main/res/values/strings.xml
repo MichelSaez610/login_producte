@@ -11,4 +11,5 @@
     <string name="e_mail_label">E-Mail</string>
     <string name="phone_number_label">Phone Number</string>
     <string name="password_label">Password</string>
+    <string name="hola_que_tal">hola que tal</string>
 </resources>

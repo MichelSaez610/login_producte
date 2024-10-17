@@ -7,4 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".ProducteActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="418dp"
+        android:layout_height="372dp"
+        app:srcCompat="@drawable/gray_square"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="381dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
