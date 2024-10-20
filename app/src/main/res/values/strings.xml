@@ -12,6 +12,11 @@
     <string name="phone_number_label">Phone Number</string>
     <string name="password_label">Password</string>
     <string name="hola_que_tal">hola que tal</string>
+    <string name="your_product_name">Your product name</string>
+    <string name="product_price_text">$39</string>
+    <string name="Lorem">Lorem ipsum dolor sit emet</string>
+    <string name="product_characterisitcs">De lunes a domingo voy todo viciado La antorcha prendida, luz por todos los lados Picando y picando y yo no te he encontrado</string>
+    <string name="add_to_cart">Add to cart</string>
     <string-array name="dropdown_items">
         <item>DELUXE</item>
         <item>PREMIUM</item>
