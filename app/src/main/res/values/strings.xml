@@ -12,4 +12,9 @@
     <string name="phone_number_label">Phone Number</string>
     <string name="password_label">Password</string>
     <string name="hola_que_tal">hola que tal</string>
+    <string-array name="dropdown_items">
+        <item>DELUXE</item>
+        <item>PREMIUM</item>
+        <item>COMMON</item>
+    </string-array>
 </resources>

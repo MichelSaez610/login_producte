@@ -1,6 +1,8 @@
 package com.login.login
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,12 @@ class ProducteActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val dropdown: Spinner = findViewById(R.id.dropdown_menu)
+
+        val adapter: ArrayAdapter<CharSequence> = ArrayAdapter.createFromResource(this, R.array.dropdown_items, android.R.layout.simple_spinner_item)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item)
+
+        dropdown.setAdapter(adapter)
     }
 }

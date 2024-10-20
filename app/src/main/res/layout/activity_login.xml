@@ -5,24 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
-    <ImageView
-        android:id="@+id/blue_semicircle"
-        android:layout_width="412dp"
-        android:layout_height="970dp"
-        android:src="@drawable/azul"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,VisualLintBounds"
-        tools:layout_editor_absoluteY="-290dp" />
+    tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="189dp"
+        android:layout_height="191dp"
         android:layout_margin="15dp"
-        app:cardCornerRadius="70dp"
+        app:cardCornerRadius="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -30,8 +20,8 @@
 
         <ImageView
             android:id="@+id/pfp_image"
-            android:layout_width="141dp"
-            android:layout_height="139dp"
+            android:layout_width="190dp"
+            android:layout_height="196dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -39,9 +29,33 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.044"
+            app:srcCompat="@drawable/pfp"
             tools:src="@tools:sample/avatars"
             tools:srcCompat="@drawable/pfp" />
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="420dp"
+        android:layout_height="300dp"
+        android:src="@drawable/blue_figure_part1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_figure_part1"
+        tools:srcCompat="@drawable/blue_figure_part1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="461dp"
+        android:layout_height="429dp"
+        android:layout_marginBottom="432dp"
+        android:src="@drawable/blue_figure_part2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/blue_figure_part2"
+        tools:srcCompat="@drawable/blue_figure_part2" />
 
     <TextView
         android:id="@+id/preview_text"
@@ -54,14 +68,15 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
     <Button
         android:id="@+id/plus_button"
-        android:layout_width="60dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="77dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="32dp"
         android:text="@string/plus"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -76,14 +91,16 @@
         android:id="@+id/name_input"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
         android:background="@drawable/outline_box_edittext"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="376dp" />
+        app:layout_constraintTop_toBottomOf="@+id/plus_button"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/mail_input"
@@ -152,7 +169,9 @@
         android:layout_height="wrap_content"
         android:text="@string/full_name"
         app:layout_constraintBottom_toTopOf="@+id/name_input"
-        tools:layout_editor_absoluteX="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -161,7 +180,9 @@
         android:layout_height="wrap_content"
         android:text="@string/e_mail_label"
         app:layout_constraintBottom_toTopOf="@+id/mail_input"
-        tools:layout_editor_absoluteX="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -170,7 +191,9 @@
         android:layout_height="wrap_content"
         android:text="@string/phone_number_label"
         app:layout_constraintBottom_toTopOf="@+id/phone_input"
-        tools:layout_editor_absoluteX="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -179,7 +202,11 @@
         android:layout_height="wrap_content"
         android:text="@string/password_label"
         app:layout_constraintBottom_toTopOf="@+id/password_input"
-        tools:layout_editor_absoluteX="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
